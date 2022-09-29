@@ -6,7 +6,7 @@
 }
 
 .function_button{
-    background-color: cadetblue;
+    background-color: rgb(72, 157, 248);
     border-radius: 0.8rem;
     min-height: 60px;
 }
@@ -19,3 +19,15 @@
     transition: all .2s;
 }
 
+.logout{
+    transition: all .2s;
+}
+
+.logout:hover{
+    color:rgb(255, 183, 0);
+    scale: 1.05;
+}
+
+.btn-outline-secondary{
+    outline: 0px !important;
+}
