@@ -9,6 +9,8 @@
     background-color: cadetblue;
     border-radius: 0.8rem;
     min-height: 60px;
+    min-width: 60px;
+
 }
 .icon-size{
     max-width: 80px;
@@ -35,5 +37,5 @@
     width: 90px;
 }
 #dashboard{
-    transition: all .3s;
+    transition: width .3s;
 }
