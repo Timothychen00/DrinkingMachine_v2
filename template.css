@@ -2,13 +2,16 @@
     border-radius: 0.8rem;
     outline-style: solid;
     outline-width: 1px;
-    min-height: 700px;
+    height: inherit;
 }
 
 .function_button{
     background-color: cadetblue;
     border-radius: 0.8rem;
     min-height: 60px;
+}
+.icon-size{
+    max-width: 80px;
 }
 
 .search:hover{
@@ -19,3 +22,18 @@
     transition: all .2s;
 }
 
+#menu:hover{
+    scale: 1.05;   
+    /* border: .75px solid black; */
+    background: rgba(224, 224, 224, 0.36);
+    
+}
+#menu{
+    transition: all .2s;
+    border-radius: 0.8rem; 
+    height: 50px;
+    width: 90px;
+}
+#dashboard{
+    transition: all .3s;
+}

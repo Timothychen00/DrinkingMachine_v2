@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="template.css">
 </head>
 
-<body>
+<body style="overflow:hidden " class="pb-3">
   <header>
     <!-- place navbar here -->
   </header>
-  <main>
-    <div class="container-fluid">
+    <div class="container-fluid vh-100">
         <div class="row  mt-3 px-2">
             <div class="col-2 justify-align-center text-center d-inline-flex align-items-center ">
-                <ion-icon size="large" class="" name="water-outline"></ion-icon>
-                <b class="">鑫沅淨水</b>
+                <ion-icon name="menu-outline" size="large" id="menu" class="ms-2 me-4"></ion-icon>
+                <ion-icon size="large" class="" name="water-outline" class="ms-2"></ion-icon>
+                <p style="user-select: none;word-break:keep-all;font-size:larger" class="pt-3" >鑫沅淨水</p>
             </div>
             <div class="form-floating col-2 d-inline-flex align-items-center">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
@@ -46,8 +46,8 @@
             </div>
         </div>
 
-        <div class="row mt-3">
-            <div class="col-2">
+        <div class="row mt-3 ps-2 pe-2"  style="height: 100%">
+            <div class="col-2 px-3" id="dashboard">
                 <div class="function_button">
                     <b>1</b>
                 </div>
@@ -58,7 +58,7 @@
                     <b>3</b>
                 </div>
             </div>
-            <div class="col">
+            <div class="col"  style="height: 100%">
                 <div class="middle_border">
                     <div class="">
                         <b>1</b>
@@ -70,7 +70,6 @@
             </div>
         </div>
     </div>
-  </main>
   <footer>
     <!-- place footer here -->
   </footer>
@@ -84,6 +83,16 @@
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    var menu_btn=document.getElementById('menu');
+    var dashboard=document.getElementById('dashboard');
+    menu_btn.addEventListener('click',(event)=>{
+        if (String(dashboard.classList).includes('col-2'))
+            dashboard.classList='col-1 px-3';
+        else
+            dashboard.classList='col-2 px-3';
+    })
+  </script>
 </body>
 
 </html>
