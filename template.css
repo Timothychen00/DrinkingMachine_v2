@@ -75,3 +75,9 @@ body{
     max-width: 1200px;
     min-height: 700px;
 }
+
+@media screen and (max-width:768px) { 
+    .water-icon{
+        display: none;
+    }
+  }
