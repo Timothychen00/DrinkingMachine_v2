@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+{% block title %}客戶管理{% endblock title%}
+{% block content%}
+    <div class="container-fluid p-0 p-md-3" >
+        <div class="row justify-content-center ">
+            <div class="col-12 mb-4">
+                <div class="card shadow border-start-primary py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center justify-content-center no-gutters mt-3">
+                            <div class="col-12 me-2" style="user-select: auto;">
+                                <!-- <div class="text-uppercase text-primary fw-bold text-s mb-1"><span>客戶清單</span></div> -->
+                                <div class="card mb-4" style="user-select: auto; ">
+                                    <div class="card-header d-flex justify-content-between align-items-center" style="user-select: auto;">
+                                        <h6 class="text-primary fw-bold m-0" style="user-select: auto;">客戶資料</h6>
+                                        <!-- <div class="dropdown no-arrow" style="user-select: auto;"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="user-select: auto;"><i class="fas fa-ellipsis-v text-gray-400" style="user-select: auto;"></i></button>
+                                            <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in" style="user-select: auto;">
+                                                <p class="text-center dropdown-header" style="user-select: auto;">dropdown header:</p><a class="dropdown-item" href="#" style="user-select: auto;">&nbsp;Action</a><a class="dropdown-item" href="#" style="user-select: auto;">&nbsp;Another action</a>
+                                                <div class="dropdown-divider" style="user-select: auto;"></div><a class="dropdown-item" href="#" style="user-select: auto;">&nbsp;Something else here</a>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="card-body overflow-scroll" style="user-select: auto;">
+                                        <table class="table table-bordered border border-gray border-2 mt-3">
+                                            <thead style="user-select: auto;">
+                                          <tr style="user-select: auto;">
+                                            <th class="col-2" style="user-select: auto;">ID</th>
+                                            <td style="user-select: auto;">22</td>
+                                          </tr>
+                                        </thead>
+                                        <tbody style="user-select: auto;">
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">名稱</th>
+                                            <td style="user-select: auto;">豆漿姑(顏'R)：蘇澳中山路</td>
+                                          </tr>
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">地址</th>
+                                            <td style="user-select: auto;">蘇澳鎮中山路一段167號</td>
+                                          </tr>
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">電話</th>
+                                            <td style="user-select: auto;">0927471513</td>
+                                          </tr>
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">機器型號</th>
+                                            <td style="user-select: auto;">五道淨水器(四分鎖牙)</td>
+                                          </tr>
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">上次時間</th>
+                                            <td style="user-select: auto;">2023-02-20</td>
+                                          </tr>
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">下次時間</th>
+                                            <td style="user-select: auto;">2023-08</td>
+                                          </tr>
+                                          <tr style="user-select: auto;">
+                                            <th scope="row" style="user-select: auto;">備註</th>
+                                            <td style="white-space: pre; user-select: auto;">＊安裝日期：98.10.05＊價格：＊保養週期：6個月-------------------------------------------------
+                                                
+                                              <div class="overflow-scroll" style="width: 100%; height: 200px !important; white-space: normal !important; user-select: auto;">
+                                              
+                                                關聯機器：
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/13/" style="user-select: auto;">13 豆漿姑(游世傑)：冬山義成路</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/22/" style="user-select: auto;">22 豆漿姑(顏'R)：蘇澳中山路</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/112/" style="user-select: auto;">112 豆漿姑(游世傑)：羅商</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/322/" style="user-select: auto;">322 豆漿姑(胡怡婷)：羅東倉前路</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/326/" style="user-select: auto;">326 豆漿姑(胡's)：羅東禮運路</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/420/" style="user-select: auto;">420 豆漿姑(胡'S)：羅東中正北路</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/423/" style="user-select: auto;">423 豆漿姑(顏'r)：利澤				</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/480/" style="user-select: auto;">480 豆漿姑(家)</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/761/" style="user-select: auto;">761 林長秋(利澤豆漿姑員工)</a>
+                                                
+                                                  <br style="user-select: auto;"><a href="/customers/923/" style="user-select: auto;">923 豆漿姑(顏'r)：二結</a>
+                                                
+                                              
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center no-gutters mt-3">
+                            <div class="col-12 me-2" style="user-select: auto;">
+                                <div class="card mb-4" style="user-select: auto; ">
+                                    <div class="card-header d-flex justify-content-between align-items-center" style="user-select: auto;">
+                                        <h6 class="text-primary fw-bold m-0" style="user-select: auto;">客戶資料</h6>
+                                    </div>
+                                    <div class="card-body overflow-scroll" style="user-select: auto; height: 500px;">
+
+                                        <!-- table start -->
+
+                                        <table class="table px-2 text-center" id="logs" style="user-select: auto;">
+                                            <thead style="user-select: auto;">
+                                              <tr style="user-select: auto;">
+                                                <th scope="col" style="user-select: auto;">時間</th>
+                                                <th scope="col" style="user-select: auto;">類型</th>
+                                                <th scope="col" style="user-select: auto;">1</th>
+                                                <th scope="col" style="user-select: auto;">2</th>
+                                                <th scope="col" style="user-select: auto;">3</th>
+                                                <th scope="col" style="user-select: auto;">4</th>
+                                                <th scope="col" style="user-select: auto;">5</th>
+                                                <th scope="col" style="user-select: auto;">6</th>
+                                                <th scope="col" style="user-select: auto;">價錢</th>
+                                                <th scope="col" style="user-select: auto;">人員</th>
+                                                <th scope="col" style="user-select: auto;">備註</th>
+                                                <th scope="col" style="user-select: auto;">刪除</th>
+                                              </tr>
+                                            </thead>
+                            
+                                            <tbody style="user-select: auto;">
+                            
+                                                
+                                                  
+                                                    
+                                                        <tr style="user-select: auto;">
+                                                            <td style="user-select: auto;">2021-05-13</td>
+                                                            <td style="user-select: auto;">完成</td>
+                                                            
+                                                                <td style="user-select: auto;">
+                                                                <div style="width: 10px !important; user-select: auto;">
+                                                                
+                                                                    ✓
+                                                                
+                                                                </div>
+                                                                </td>
+                                                            
+                                                                <td style="user-select: auto;">
+                                                                <div style="width: 10px !important; user-select: auto;">
+                                                                
+                                                                    ✓
+                                                                
+                                                                </div>
+                                                                </td>
+                                                            
+                                                                <td style="user-select: auto;">
+                                                                <div style="width: 10px !important; user-select: auto;">
+                                                                
+                                                                    ✓
+                                                                
+                                                                </div>
+                                                                </td>
+                                                            
+                                                                <td style="user-select: auto;">
+                                                                <div style="width: 10px !important; user-select: auto;">
+                                                                
+                                                                    ✓
+                                                                
+                                                                </div>
+                                                                </td>
+                                                            
+                                                                <td style="user-select: auto;">
+                                                                <div style="width: 10px !important; user-select: auto;">
+                                                                
+                                                                </div>
+                                                                </td>
+                                                            
+                                                                <td style="user-select: auto;">
+                                                                <div style="width: 10px !important; user-select: auto;">
+                                                                
+                                                                    ✓
+                                                                
+                                                                </div>
+                                                                </td>
+                                                            
+                                                            <td style="user-select: auto;">3100</td>
+                                                            <td style="user-select: auto;">健瑋</td>
+                                                            <td style="user-select: auto;"></td>
+                                                            <td style="user-select: auto;">
+                                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal02021-05-13" style="user-select: auto;">刪除</button>
+                                                                <div class="modal fade" id="exampleModal02021-05-13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="user-select: auto;">
+                                                                    <div class="modal-dialog" style="user-select: auto;">
+                                                                        <div class="modal-content" style="user-select: auto;">
+                                                                            <div class="modal-header" style="user-select: auto;">
+                                                                                <h5 class="modal-title" id="exampleModalLabel" style="user-select: auto;">確認刪除？</h5>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="user-select: auto;"></button>
+                                                                            </div>
+                                                                            <div class="modal-body" style="user-select: auto;">
+                                                                                <p class="fw-bold" style="user-select: auto;">請注意！刪除後將無法復原！</p>
+                                                                            </div>
+                                                                            <div class="modal-footer" style="user-select: auto;">
+                                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="user-select: auto;">取消</button>
+                                                                                <button type="button" class="btn btn-danger" onclick="location.href='/customers/5/delete_log?log_id=0&amp;date=2021-05-13'" style="user-select: auto;">確認刪除</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>  
+                                            </tbody>
+                                          </table>
+
+                                          <!-- table end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content%}
